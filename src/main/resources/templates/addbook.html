@@ -49,31 +49,31 @@
 
 <form th:action="@{/addbook}" th:object="${addbook}" method="post">
     <div class="col-2">
-        <label for="exampleInputTitle">subject</label>
+        <label for="exampleInputTitle">title</label>
         <input id="exampleInputTitle" class="form-control" type="text" th:field="*{title}"
                placeholder="title">
         <span th:errors="*{title}"></span>
     </div>
     <div class="col-2 ">
-        <label for="exampleInputAuthorName">description</label>
+        <label for="exampleInputAuthorName">author name</label>
         <input id="exampleInputAuthorName" class="form-control" type="text" th:field="*{authorName}"
                placeholder="author name">
         <span th:errors="*{authorName}"></span>
     </div>
     <div class="col-2 ">
-        <label for="exampleInputAuthorSurname">description</label>
+        <label for="exampleInputAuthorSurname">author surname</label>
         <input id="exampleInputAuthorSurname" class="form-control" type="text" th:field="*{authorSurname}"
                placeholder="author surname">
         <span th:errors="*{authorSurname}"></span>
     </div>
     <div class="col-2 ">
-        <label for="exampleInputDate">description</label>
+        <label for="exampleInputDate">date of publish</label>
         <input id="exampleInputDate" class="form-control" type="text" th:field="*{dateOfPublish}"
                placeholder="date of publish">
         <span th:errors="*{dateOfPublish}"></span>
     </div>
     <div class="col-2 ">
-        <label for="exampleInputBarcode">description</label>
+        <label for="exampleInputBarcode">book barcode</label>
         <input id="exampleInputBarcode" class="form-control" type="text" th:field="*{bookBarcode}"
                placeholder="barcode">
         <span th:errors="*{bookBarcode}"></span>
